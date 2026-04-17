@@ -3,11 +3,6 @@
 Pour lancer une instance PostgreSQL via Docker, utilisez la commande suivante :
 
 ````markdown
-# 🏥 PFECOMPET
-
-
-
-```
 docker run --name postgrepfe \
 -e POSTGRES_DB=pfeapp \
 -e POSTGRES_USER=ilcs \
