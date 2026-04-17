@@ -1,0 +1,16 @@
+package com.pfe.backend_pfe.Entities.Enumerations;
+
+public enum Regions {
+    TANGER_TETOUAN_AL_HOCEIMA,
+    L_ORIENTAL,
+    FES_MEKNES,
+    RABAT_SALE_KENITRA,
+    BENI_MELLAL_KHENIFRA,
+    CASABLANCA_SETAT,
+    MARRAKECH_SAFI,
+    DRAA_TAFILALET,
+    SOUSS_MASSA,
+    GUELMIM_OUED_NOUN,
+    LAAYOUNE_SAKIA_EL_HAMRA,
+    DAKHLA_OUED_ED_DAHAB
+}
