@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6fcd8a7-e8ac-4505-9bf1-609110ee05cc" name="Changes" comment="" />
+    <list default="true" id="a6fcd8a7-e8ac-4505-9bf1-609110ee05cc" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/BACKEND_PFE" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND_PFE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BACKEND_PFE/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND_PFE/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PFE-FRONTEND" beforeDir="false" afterPath="$PROJECT_DIR$/PFE-FRONTEND" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PFE-FRONTEND/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PFE-FRONTEND/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PFE-FRONTEND/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PFE-FRONTEND/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +38,18 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BACKEND_PFE" />
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "yahyaess06"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/yahyaess06/PFECOMPLET.git",
+    "accountId": "0f99b1d0-8978-4d31-8d17-abb89dac3fa6"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -47,11 +65,12 @@
     "RequestMappingsPanelWidth0": "75",
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.BackendPfeApplication.executor": "Run",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/c/Desktop/git/PFECOMPLET",
+    "last_opened_file_path": "C:/Users/c/Desktop/gite",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -87,6 +106,7 @@
       <updated>1776417355420</updated>
       <workItem from="1776417356860" duration="1893000" />
       <workItem from="1776419467543" duration="1433000" />
+      <workItem from="1776420976789" duration="717000" />
     </task>
     <servers />
   </component>
