@@ -1,16 +1,13 @@
-
-````markdown
-# 🏥 PFECOMPET
-
-Projet de fin d'étude regroupé dans un seul repository.
-
----
-
 ## 🐳 Configuration de PostgreSQL (Docker)
 
 Pour lancer une instance PostgreSQL via Docker, utilisez la commande suivante :
 
-```bash
+````markdown
+# 🏥 PFECOMPET
+
+
+
+```
 docker run --name postgrepfe \
 -e POSTGRES_DB=pfeapp \
 -e POSTGRES_USER=ilcs \
