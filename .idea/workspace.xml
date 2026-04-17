@@ -4,22 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6fcd8a7-e8ac-4505-9bf1-609110ee05cc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/BACKEND_PFE/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/BACKEND_PFE/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFE-FRONTEND/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/PFE-FRONTEND/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PFE-FRONTEND/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/PFE-FRONTEND/package.json" afterDir="false" />
-    </list>
+    <list default="true" id="a6fcd8a7-e8ac-4505-9bf1-609110ee05cc" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/BACKEND_PFE" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="3CTlHkW9L7KfWgXWwtE2fcbXZ9E" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -36,7 +51,7 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/c/Desktop/github",
+    "last_opened_file_path": "C:/Users/c/Desktop/git/PFECOMPLET",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -71,6 +86,7 @@
       <option name="presentableId" value="Default" />
       <updated>1776417355420</updated>
       <workItem from="1776417356860" duration="1893000" />
+      <workItem from="1776419467543" duration="1433000" />
     </task>
     <servers />
   </component>
