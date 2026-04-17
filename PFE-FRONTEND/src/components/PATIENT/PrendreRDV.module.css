@@ -1,0 +1,211 @@
+/* src/components/PATIENT/PrendreRDV.module.css */
+
+/* Variables de Couleur et Style */
+:root {
+    --primary-green: #2ecc71;
+    --text-color: #333;
+    --text-light: #666;
+    --white: #fff;
+    --border-color: #ddd;
+}
+
+/* src/components/PATIENT/PrendreRDV.module.css */
+
+/* src/components/PATIENT/PrendreRDV.module.css */
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Retirez le padding du haut (le premier 10px) ou mettez-le à 0 */
+    padding: 0 20px 20px 20px; /* Padding haut à 0, le reste inchangé */
+}
+
+/* --- 1. En-tête de la Page --- */
+/* src/components/PATIENT/PrendreRDV.module.css */
+
+.header {
+    /* Retirez complètement la marge et le padding pour coller au haut de l'écran */
+    margin-top: 0;
+    padding-top: 0;
+    
+    /* Conserver une marge en bas pour séparer le titre du formulaire de recherche */
+    margin-bottom: 30px; 
+    padding-left: 10px;
+}
+
+.pageTitle {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0 0 5px 0;
+}
+
+.subtitle {
+    font-size: 16px;
+    color: var(--text-light);
+    margin: 0;
+}
+
+/* --- 2. Panneau de Recherche (Formulaire) --- */
+.searchPanel {
+    background-color: var(--white);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Ombre légère */
+    margin-bottom: 40px;
+}
+
+.searchHeader {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.searchTitle {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.searchForm {
+    display: flex;
+    align-items: flex-end; 
+    gap: 20px; /* Espacement entre les champs */
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+}
+
+.label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+.inputWithIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputField {
+    width: 100%;
+    padding: 10px 40px 10px 15px; 
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--white);
+    /* Retirer le style par défaut du select */
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.inputField:focus {
+    border-color: var(--primary-green);
+    outline: none;
+}
+
+.inputIcon {
+    position: absolute;
+    right: 10px;
+    pointer-events: none; 
+}
+
+.verifyButton {
+    background-color: var(--primary-green);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    /* Hauteur pour s'aligner avec les inputs */
+    height: 42px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0; /* Empêche le bouton de rétrécir */
+}
+
+.verifyButton:hover {
+    background-color: #27ae60;
+}
+
+/* --- 3. Section Infos Importantes (Cartes) --- */
+.infoSection {
+    margin-top: 40px;
+}
+
+.infoSectionHeader {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    margin-bottom: 25px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sectionTitle {
+    margin: 0;
+}
+
+.cardsContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.infoCard {
+    flex: 1;
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.infoIconContainer {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 6px rgba(46, 204, 113, 0.2); /* Ombre verte pour l'icône */
+}
+
+.infoTitle {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-color);
+    margin: 0 0 5px 0;
+}
+
+.infoDescription {
+    font-size: 14px;
+    color: var(--text-light);
+    margin: 0;
+}
+/* Un fichier CSS global (à ajuster) */
+
+main {
+    flex-grow: 1;
+    /* Ancien padding : padding: 2.5rem; (équivaut à 40px) */
+    
+    /* Nouveau padding réduit pour remonter le contenu (24px est une bonne valeur de départ) */
+   padding: 1.5rem; /* ou 24px */
+    overflow-y: auto;
+}

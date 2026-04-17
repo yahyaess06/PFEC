@@ -1,0 +1,310 @@
+.container {
+    padding: 40px;
+    margin-left: 260px; /* Espace sidebar */
+    background-color: #f4f7fe;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title { font-size: 1.8rem; color: #1b2559; font-weight: 700; margin: 0; }
+.subtitle { font-size: 1rem; color: #a3aed0; margin-top: 5px; }
+
+.addBtn {
+    background: linear-gradient(135deg, #3a7bd5, #00d2ff);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(58, 123, 213, 0.2);
+    transition: 0.3s;
+}
+
+.addBtn:hover { transform: translateY(-2px); opacity: 0.9; }
+
+/* Table Card */
+.tableCard {
+    background: white;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.02);
+}
+
+.departTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.departTable th {
+    text-align: left;
+    padding: 15px;
+    color: #a3aed0;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.departTable td {
+    padding: 18px 15px;
+    border-bottom: 1px solid #f1f5f9;
+    color: #1b2559;
+    font-size: 0.95rem;
+}
+
+.deptInfo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.deptIcon {
+    width: 35px;
+    height: 35px;
+    background: #eff6ff;
+    color: #3b82f6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.descCol { color: #64748b; font-size: 0.9rem; }
+
+/* Badges */
+.countBadge {
+    background: #f4f7fe;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #3a7bd5;
+    font-size: 0.8rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
+}
+
+.statusBadge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.statusActive { background: #ecfdf5; color: #10b981; }
+.statusInactive { background: #fff1f2; color: #ef4444; }
+
+/* Boutons Actions */
+.actions { display: flex; gap: 8px; }
+
+.editBtn, .deleteBtn {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.editBtn { background: #eff6ff; color: #3b82f6; }
+.editBtn:hover { background: #3b82f6; color: white; }
+
+.deleteBtn { background: #fff1f2; color: #ef4444; }
+.deleteBtn:hover { background: #ef4444; color: white; }
+
+/* Responsive */
+@media (max-width: 900px) {
+    .container { margin-left: 0; padding: 20px; }
+    .descCol { display: none; } /* On cache la description sur mobile */
+}
+/* Styles pour les icônes d'action communes */
+.actionIcon {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Bouton Play (Activer) */
+.playBtn {
+    background: #ecfdf5;
+    color: #10b981;
+}
+.playBtn:hover {
+    background: #10b981;
+    color: white;
+}
+
+/* Bouton Pause (Désactiver) */
+.pauseBtn {
+    background: #fffbeb;
+    color: #f59e0b;
+}
+.pauseBtn:hover {
+    background: #f59e0b;
+    color: white;
+}
+
+/* On garde les anciens boutons */
+.editBtn { background: #eff6ff; color: #3b82f6; }
+.editBtn:hover { background: #3b82f6; color: white; }
+
+.deleteBtn { background: #fff1f2; color: #ef4444; }
+.deleteBtn:hover { background: #ef4444; color: white; }
+
+/* Animation pour le badge de statut */
+.statusBadge {
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+/* MODAL */
+.modalOverlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+    z-index: 9999;
+}
+
+.modalCard{
+    width: 100%;
+    max-width: 720px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 30px 70px rgba(0,0,0,.2);
+    overflow: hidden;
+    animation: pop .15s ease-out;
+}
+
+@keyframes pop{
+    from{ transform: scale(.98); opacity: 0; }
+    to{ transform: scale(1); opacity: 1; }
+}
+
+.modalHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 18px 14px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.modalHeader h2{
+    margin: 0;
+    font-size: 18px;
+    font-weight: 800;
+    color: #0f172a;
+}
+
+.modalClose{
+    border: none;
+    background: #f1f5f9;
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.modalForm{
+    padding: 18px;
+}
+
+.formGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+@media (max-width: 700px){
+    .formGrid{
+        grid-template-columns: 1fr;
+    }
+}
+
+.formGroup label{
+    display: block;
+    font-size: 12px;
+    font-weight: 800;
+    color: #334155;
+    margin-bottom: 6px;
+}
+
+.formGroup input{
+    width: 100%;
+    padding: 10px 12px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    outline: none;
+    font-weight: 600;
+}
+
+.formGroup input:focus{
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59,130,246,.15);
+}
+
+.errorText{
+    display: block;
+    margin-top: 6px;
+    font-size: 12px;
+    color: #ef4444;
+    font-weight: 700;
+}
+
+.modalActions{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 14px;
+    border-top: 1px solid #e2e8f0;
+    margin-top: 16px;
+}
+
+.cancelBtn{
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    background: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.submitBtn{
+    padding: 10px 14px;
+    border-radius: 12px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+.submitBtn:hover{
+    background: #1d4ed8;
+}

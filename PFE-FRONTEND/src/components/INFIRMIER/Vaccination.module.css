@@ -1,0 +1,119 @@
+.container {
+    padding: 2rem;
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.titleInfo h1 { font-size: 1.8rem; color: #1e293b; margin: 0; }
+.titleInfo p { color: #64748b; font-size: 0.9rem; margin-top: 4px; }
+
+.headerActions { display: flex; gap: 1rem; }
+
+.filterBtn, .addBtn {
+    padding: 0.7rem 1.2rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.filterBtn { background: white; color: #475569; border: 1px solid #e2e8f0; }
+.addBtn { background: #0ea5e9; color: white; box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2); }
+
+/* Stats */
+.statsRow {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.statCard {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 24px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.02);
+}
+
+.cardTop { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.iconBox { width: 42px; height: 42px; border-radius: 12px; display: flex; align-items: center; justify-content: center; }
+.bgBlue { background: #e0f2fe; color: #0ea5e9; }
+.bgGreen { background: #dcfce7; color: #22c55e; }
+.bgOrange { background: #ffedd5; color: #f59e0b; }
+.bgRed { background: #fee2e2; color: #ef4444; }
+
+.statLabel { font-size: 0.65rem; font-weight: 700; color: #94a3b8; }
+.statValue { font-size: 2rem; font-weight: 800; color: #1e293b; margin: 0; }
+.statDesc { font-size: 0.85rem; color: #64748b; margin: 0; }
+
+/* Grid layout */
+.mainGrid { display: grid; grid-template-columns: 2fr 1fr; gap: 1.5rem; }
+
+.tableCard { background: white; border-radius: 24px; padding: 1.5rem; }
+.tableHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+
+.searchBar {
+    background: #f8fafc;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 10px;
+    color: #94a3b8;
+}
+
+.searchBar input { border: none; background: transparent; padding: 0.6rem; outline: none; }
+
+/* Table styles */
+.table { width: 100%; border-collapse: collapse; }
+.table th { text-align: left; font-size: 0.75rem; color: #94a3b8; padding: 1rem; border-bottom: 1px solid #f1f5f9; }
+.table td { padding: 1.2rem 1rem; border-bottom: 1px solid #f8fafc; }
+
+.patientInfo { display: flex; align-items: center; gap: 12px; }
+.avatar { width: 40px; height: 40px; border-radius: 50%; background: #f1f5f9; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #0ea5e9; border: 2px solid #e0f2fe; }
+.pName { font-weight: 700; color: #1e293b; font-size: 0.9rem; }
+.pDetail { font-size: 0.75rem; color: #94a3b8; }
+
+.vaccinBadge { padding: 4px 10px; border-radius: 8px; font-size: 0.75rem; font-weight: 700; }
+.vBlue { background: #e0f2fe; color: #0ea5e9; }
+.vOrange { background: #ffedd5; color: #f59e0b; }
+
+.confirmBtn { background: #0ea5e9; color: white; border: none; padding: 8px 16px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; cursor: pointer; }
+.doneLabel { color: #22c55e; font-weight: 700; font-size: 0.8rem; display: flex; align-items: center; gap: 5px; }
+
+/* Right Column */
+.sideCard { background: white; border-radius: 24px; padding: 1.5rem; margin-bottom: 1.5rem; }
+.sideHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+.linkBtn { background: none; border: none; color: #0ea5e9; font-weight: 600; cursor: pointer; }
+
+.stockItem { margin-bottom: 1.2rem; }
+.stockInfo { display: flex; justify-content: space-between; font-size: 0.85rem; font-weight: 700; color: #1e293b; margin-bottom: 8px; }
+.stockCount { color: #64748b; }
+
+.progressBar { height: 6px; background: #f1f5f9; border-radius: 10px; overflow: hidden; margin-bottom: 6px; }
+.progressRed { height: 100%; background: #ef4444; }
+.progressOrange { height: 100%; background: #f59e0b; }
+.progressGreen { height: 100%; background: #22c55e; }
+
+.critiqueText { font-size: 0.65rem; color: #ef4444; font-weight: 800; }
+.warningText { font-size: 0.65rem; color: #f59e0b; font-weight: 800; }
+.successText { font-size: 0.65rem; color: #22c55e; font-weight: 800; }
+
+.orderBtn { width: 100%; padding: 1rem; border: 1px solid #e2e8f0; background: white; border-radius: 12px; color: #0ea5e9; font-weight: 700; cursor: pointer; margin-top: 1rem; }
+
+.protocolCard { background: #e0f2fe; border-radius: 24px; padding: 1.5rem; display: flex; gap: 15px; }
+.protoIcon { color: #0ea5e9; }
+.protocolCard h4 { margin: 0; color: #0c4a6e; }
+.protocolCard p { font-size: 0.8rem; color: #075985; margin-top: 5px; line-height: 1.5; }
+
+.pagination { display: flex; justify-content: space-between; align-items: center; margin-top: 1.5rem; color: #94a3b8; font-size: 0.85rem; }
+.arrows { display: flex; gap: 1rem; cursor: pointer; }

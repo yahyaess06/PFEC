@@ -1,0 +1,291 @@
+/* src/components/PATIENT/Doctors.module.css */
+
+/* Variables de Couleur et Style */
+:root {
+    --primary-green: #2ecc71;
+    --text-color: #333;
+    --text-light: #666;
+    --white: #fff;
+    --background-gray: #f9f9f9;
+    --border-color: #ddd;
+    --star-gold: #ffc107;
+}
+
+/* Fichier CSS Global ou Layout (à vérifier) */
+
+/* Fichier CSS Global ou Layout (à ajuster) */
+
+main {
+    flex-grow: 1;
+    /* Met le padding vertical à zéro pour coller le contenu en haut et en bas */
+    padding-top: 0;
+    padding-bottom: 0;
+    
+    /* Conserver un petit padding gauche/droite si vous ne le gérez pas dans la page */
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    overflow-y: auto; 
+}
+/* src/components/PATIENT/Doctors.module.css */
+
+/* ... (Variables de Couleur) ... */
+
+/* src/components/PATIENT/Doctors.module.css */
+/* src/components/PATIENT/Doctors.module.css */
+
+/* ... (styles existants) ... */
+
+/* Nouvelle classe pour le conteneur interne scrollable */
+.scrollableContent {
+    /* Cela permet au contenu de défiler */
+    overflow-y: auto; 
+    
+    /* ATTENTION: Cette hauteur doit être définie en fonction de l'espace restant. 
+       Ceci est complexe car dépend de la hauteur de .header et .filterPanel.
+       Une valeur simple comme '100vh' sera incorrecte sans le calcul Flexbox.
+       
+       Mieux vaut utiliser flexbox pour remplir l'espace restant:
+    */
+    
+    /* Si vous voulez que le scroll soit interne, le .container doit devenir un flexbox */
+    /* Ces règles doivent être ajoutées à .container pour que le flex-grow fonctionne */
+    /* .container doit être flex-direction: column; et avoir une hauteur fixe (souvent 100% du <main>) */
+    
+    /* Si le parent (<main>) n'a pas de hauteur fixe, cela ne fonctionnera pas bien. */
+    height: 100%; /* Tentative de prendre l'espace restant */
+}
+
+/* Modifiez .container pour supporter le flexbox et calculer l'espace */
+/* src/components/PATIENT/Doctors.module.css */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* Aucun height/overflow: hidden ici */
+    padding: 0 20px 20px 20px; 
+}
+
+/* ... Et la grille ne doit pas avoir de hauteur fixe non plus ... */
+.doctorsGrid {
+    display: grid;
+    /* ... (autres propriétés de grille) ... */
+    /* Aucun height/max-height ici */
+}
+
+/* NOUVEAU: Permet au contenu scrollable de prendre l'espace restant */
+
+
+
+.header {
+    /* Marge supérieure à zéro */
+    margin-top: 0;
+    padding-top: 0;
+    /* ... (le reste est pour la séparation du bas, ce qui est souhaité) ... */
+}
+/* ... (Le reste des styles est inchangé) ... */
+.pageTitle { display: flex; align-items: center; font-size: 24px; font-weight: 600; color: var(--text-color); margin: 0 0 5px 0; }
+.subtitle { font-size: 16px; color: var(--text-light); margin: 0; }
+
+/* --- 2. Panneau de Filtre --- */
+.filterPanel {
+    background-color: var(--white);
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 40px;
+}
+.filterHeader { display: flex; align-items: center; color: var(--text-color); border-bottom: 1px solid var(--border-color); padding-bottom: 15px; margin-bottom: 20px; }
+.filterTitle { font-size: 18px; font-weight: 600; margin: 0; }
+.filterForm { display: flex; align-items: flex-end; gap: 20px; }
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 300px; /* Limiter la largeur du sélecteur */
+}
+
+.label { font-size: 14px; font-weight: 500; color: var(--text-light); margin-bottom: 5px; }
+
+.selectField {
+    width: 100%;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 16px;
+    color: var(--text-color);
+    background-color: var(--white);
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"><path fill="%23888888" d="M7 10l5 5 5-5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+}
+
+/* --- 3. Grille des Docteurs --- */
+.doctorsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.doctorCard {
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.doctorCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imagePlaceholder {
+    width: 100px;
+    height: 100px;
+    background-color: var(--background-gray);
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    /* Styles pour simuler une image */
+    background-size: cover;
+    background-position: center;
+    border: 3px solid var(--primary-green);
+}
+
+.doctorName {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-color);
+    margin: 0 0 5px;
+}
+
+.doctorSpecialty {
+    font-size: 15px;
+    color: var(--primary-green);
+    font-weight: 600;
+    margin: 0 0 10px;
+}
+
+.ratingContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ratingContainer svg {
+    margin-right: 2px;
+}
+
+.ratingText {
+    margin-left: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.doctorDescription {
+    font-size: 14px;
+    color: var(--text-light);
+    margin: 5px 0 20px;
+    flex-grow: 1; /* Assure que la description prend l'espace disponible */
+}
+
+.cardActions {
+    display: flex;
+    gap: 10px;
+    margin-top: auto; /* Ancre les boutons en bas de la carte */
+}
+
+.actionButton {
+    flex: 1;
+    padding: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s, opacity 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bookButton {
+    background-color: var(--primary-green);
+    color: white;
+}
+.bookButton:hover {
+    background-color: #27ae60;
+}
+
+.viewButton {
+    background-color: #f0f0f0;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+.viewButton:hover {
+    background-color: #e0e0e0;
+}
+
+.noResults {
+    grid-column: 1 / -1; /* Centrer sur toute la largeur de la grille */
+    text-align: center;
+    padding: 50px;
+    font-size: 18px;
+    color: var(--text-light);
+    font-style: italic;
+}
+
+
+/*--------------------*/
+.modalOverlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 400px;
+    animation: fadeIn 0.3s ease;
+}
+
+.modalBody {
+    text-align: center;
+}
+
+.modalImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    margin: 0 auto 15px;
+}
+
+.closeButton {
+    margin-top: 15px;
+    padding: 8px 15px;
+    border: none;
+    background: #0f172a;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}

@@ -1,0 +1,76 @@
+.na-container{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#0f4c75,#3282b8,#bbe1fa);
+    font-family: "Segoe UI", sans-serif;
+}
+
+.na-card{
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    text-align:center;
+    width:420px;
+    box-shadow:0 20px 60px rgba(0,0,0,0.2);
+    animation:fadeIn 0.7s ease;
+}
+
+.na-icon{
+    font-size:45px;
+    color:#e63946;
+    margin-bottom:10px;
+}
+
+.na-code{
+    font-size:80px;
+    margin:0;
+    color:#0f4c75;
+}
+
+.na-title{
+    margin-top:10px;
+    color:#1b262c;
+}
+
+.na-text{
+    margin-top:10px;
+    color:#555;
+    font-size:15px;
+    line-height:1.6;
+}
+
+.na-btn{
+    margin-top:25px;
+    padding:12px 30px;
+    border:none;
+    border-radius:8px;
+    background:#0f4c75;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.na-btn:hover{
+    background:#3282b8;
+    transform:scale(1.05);
+}
+
+.na-footer{
+    margin-top:25px;
+    font-size:13px;
+    color:#888;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}

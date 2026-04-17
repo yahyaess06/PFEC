@@ -1,0 +1,143 @@
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0.75rem;
+    border-right: 1px solid #f0f0f0;
+}
+
+/* Header & Logo */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2.5rem;
+}
+
+.logoCircle {
+    width: 48px;
+    height: 48px;
+    background-color: #0ea5e9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(14, 165, 233, 0.4);
+    margin-bottom: 0.75rem;
+}
+
+.plusIcon {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.brandName {
+    font-size: 1.15rem;
+    color: #1e293b;
+    font-weight: 700;
+    margin: 0;
+}
+
+.subtitle {
+    font-size: 0.7rem;
+    color: #0ea5e9;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    margin-top: 2px;
+}
+
+/* Navigation Items */
+.navList {
+    flex: 1;
+}
+
+.navItem {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0.85rem 1.25rem;
+    margin-bottom: 0.4rem;
+    border: none;
+    background: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #64748b;
+    transition: all 0.2s ease-in-out;
+}
+
+.navItem:hover:not(.active) {
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+
+.active {
+    background-color: #0ea5e9;
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(14, 165, 233, 0.25);
+}
+
+.navIcon {
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.navLabel {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Footer Profile */
+.footer {
+    padding-top: 1.5rem;
+    border-top: 1px solid #f1f5f9;
+}
+
+.userProfile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 0 0.5rem;
+}
+
+.avatarContainer {
+    position: relative;
+    display: flex;
+}
+
+.statusDot {
+    position: absolute;
+    bottom: 3px;
+    right: 2px;
+    width: 10px;
+    height: 10px;
+    background-color: #22c55e;
+    border: 2px solid #fff;
+    border-radius: 50%;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.userName {
+    font-weight: 600;
+    color: #1e293b;
+    font-size: 0.9rem;
+}
+
+.statusText {
+    color: #22c55e;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+.userProfileLink {
+    text-decoration: none;
+    display: block;
+    transition: opacity 0.2s;
+}
+.userProfileLink:hover { opacity: 0.8; }

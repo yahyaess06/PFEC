@@ -1,0 +1,129 @@
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: white;
+  border-right: 2px solid #eef2f6;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+/* ---------- LOGO ---------- */
+.logoSection {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.logoCircle {
+  background-color: #0096db;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px; /* carré moderne */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.logoSection h3 {
+  color: #333;
+  margin: 0;
+  font-size: 18px;
+}
+
+.logoSection span {
+  color: #0096db;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* ---------- NAV ---------- */
+.nav {
+  flex-grow: 1;
+  padding: 0 15px;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 18px;
+  margin-bottom: 10px;
+
+  background-color: white;
+  color: #64748b;
+
+  border-radius: 12px;
+  cursor: pointer;
+  text-decoration: none;
+
+  transition:
+          background 0.3s ease,
+          color 0.3s ease,
+          transform 0.15s ease,
+          box-shadow 0.3s ease;
+}
+
+.navItem:hover {
+  background-color: #f1f5f9;
+  color: #0096db;
+}
+
+/* clic immédiat */
+.navItem:active {
+  transform: scale(0.97);
+}
+
+/* ---------- ACTIF (BLEU) ---------- */
+.active {
+  background: linear-gradient(135deg, #0096db, #0077b6);
+  color: white !important;
+
+  box-shadow: 0 10px 25px rgba(0, 150, 219, 0.35);
+  transform: translateY(-1px);
+}
+
+.active svg {
+  color: white;
+}
+
+.active:hover {
+  background: linear-gradient(135deg, #0077b6, #005f99);
+}
+
+/* ---------- PROFILE ---------- */
+.doctorProfile {
+  margin-top: auto;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #eee;
+}
+
+.avatar {
+  background: #0096db;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.docName {
+  font-weight: bold;
+  margin: 0;
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.docStatus {
+  font-size: 11px;
+  color: #10b981;
+  margin: 0;
+  font-weight: 500;
+}

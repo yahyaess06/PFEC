@@ -1,0 +1,173 @@
+/* src/components/PATIENT/Sidebar.module.css */
+
+/* Variables pour les couleurs */
+:root {
+    --primary-green: #2ecc71; /* Vert principal */
+    --darker-green: #24a85a;  /* Vert foncé (pour le gradient de l'actif) */
+    --text-color: #333;       /* Couleur de texte standard (Noir/Gris foncé) */
+    --text-light: #888;       /* Couleur de texte secondaire/connecté (Gris clair) */
+    --sidebar-width: 260px;   /* Largeur de la barre */
+    --item-height: 48px;      /* Hauteur des boutons */
+}
+
+/* --- 1. Conteneur Principal --- */
+.sidebarContainer {
+    height: 100vh; /* Prend toute la hauteur de l'écran */
+    width: var(--sidebar-width);
+    background-color: white;
+    position: relative;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+/* La mince bande verte à droite */
+.greenDivider {
+    width: 5px;
+    background-color: var(--primary-green);
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+/* --- 2. Conteneur de Navigation (Flex Parent) --- */
+.sidebarMenu {
+    /* Padding uniforme pour l'ensemble du contenu de la barre latérale */
+    padding: 15px 15px 0 15px; /* Padding haut, gauche et droite, mais pas en bas */
+    flex-grow: 1; /* Prend l'espace pour que Flexbox fonctionne */
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+}
+
+
+/* --- 3. Styles de l'En-tête --- */
+.sidebarHeader {
+    /* Raccourci pour économiser de l'espace vertical */
+    padding: 15px 0 10px 0; 
+    text-align: center;
+    margin-bottom: 15px; /* Réduit un peu l'espace après l'en-tête */
+}
+
+.headerIcon {
+    width: 50px;
+    height: 50px;
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 10px;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebarHeader h3 {
+    margin: 0 0 5px;
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.patientSpace {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #e6f7ef;
+    color: var(--primary-green);
+    font-size: 11px;
+    font-weight: 500;
+    border-radius: 4px;
+}
+
+
+/* --- 4. Styles des Liens de Navigation --- */
+.menuList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    /* Ceci est CRUCIAL : Prend tout l'espace restant pour pousser le footer vers le bas */
+    flex-grow: 1; 
+    
+    /* Retire la marge en bas de la liste pour éviter le débordement */
+    margin-bottom: 0; 
+}
+
+/* Wrapper pour le Link */
+.linkWrapper {
+    text-decoration: none; 
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    height: var(--item-height);
+    margin-bottom: 10px; /* Réduit l'espace entre les boutons */
+    padding: 0 15px;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* Styles pour les icônes, actif, et hover (inchangés) */
+.menuIcon { margin-right: 15px; color: var(--text-light); transition: color 0.2s; }
+.itemName { line-height: 1; }
+.menuItem:not(.active):hover { background-color: #f7f7f7; color: var(--text-color); }
+.active { background: linear-gradient(90deg, var(--primary-green), var(--darker-green)); color: white !important; box-shadow: 0 4px 10px rgba(46, 204, 113, 0.3); }
+.active .menuIcon { color: white; }
+
+
+/* --- 5. Styles du Pied de Page (Patient Connecté) --- */
+.patientFooter {
+    display: flex; 
+    align-items: center;
+    padding: 10px 0 10px 0; /* Ajout d'un petit padding interne haut/bas pour l'esthétique */
+    border-top: 1px solid #eee; 
+    
+    /* ANCRAGE : Pousse l'élément vers le bas du conteneur Flexbox */
+    margin-top: auto; 
+    
+    /* Cette marge était la cause du débordement si elle était supérieure à 0 */
+    margin-bottom: 0; 
+}
+
+.patientIcon {
+    width: 40px;
+    height: 40px;
+    background-color: #e6f7ef;
+    color: var(--primary-green);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+}
+
+.patientName {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+.patientStatus {
+    margin: 0;
+    font-size: 12px;
+    color: var(--text-light);
+}
+.itemContent {
+    display: flex; /* CRUCIAL pour aligner l'icône et le texte */
+    align-items: center;
+    padding: 12px 15px; /* Padding interne du bouton */
+    margin-bottom: 8px;
+    border-radius: 8px; /* Coins arrondis */
+    text-decoration: none; /* Enlève le soulignement du Link */
+    color: #333; /* Couleur du texte par défaut */
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.itemContent:hover {
+    background-color: #f0f0f0; /* Effet de survol */
+}

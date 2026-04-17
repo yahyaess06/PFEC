@@ -1,0 +1,133 @@
+.container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #f8fafc 0%, #f1f5f9 100%);
+    font-family: 'Inter', sans-serif;
+}
+
+.card {
+    background: white;
+    width: 90%; /* Pour mobile */
+    max-width: 400px; /* Réduit de 480px à 400px */
+    padding: 30px 25px; /* Padding réduit pour compacter */
+    border-radius: 20px; /* Coins un peu moins arrondis pour l'échelle */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+    text-align: center;
+}
+
+.iconHeader {
+    width: 60px; /* Réduit de 80px */
+    height: 60px;
+    background: #f0f7ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.title {
+    font-size: 1.4rem; /* Réduit de 1.8rem */
+    font-weight: 800;
+    color: #1e293b;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    font-size: 0.85rem; /* Réduit de 0.95rem */
+    color: #64748b;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.codeContainer {
+    display: flex;
+    justify-content: center; /* Centré pour plus d'équilibre */
+    gap: 8px; /* Gap réduit */
+    margin-bottom: 25px;
+}
+
+.codeInput {
+    width: 42px; /* Réduit de 55px */
+    height: 52px; /* Réduit de 65px */
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #1e293b;
+    background: #fcfcfd;
+    transition: all 0.2s;
+}
+
+.codeInput:focus {
+    outline: none;
+    border-color: #2563eb;
+    background: white;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 12px; /* Réduit de 16px */
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.95rem; /* Plus petit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin-bottom: 20px;
+}
+
+.submitBtn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+.resendText {
+    font-size: 0.8rem; /* Plus petit */
+    color: #64748b;
+    margin-bottom: 20px;
+}
+
+.resendBtn {
+    background: none;
+    border: none;
+    color: #3b82f6;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    color: #64748b;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    cursor: pointer;
+    margin: 0 auto;
+    font-size: 0.85rem;
+}
+
+.securityFooter {
+    margin-top: 25px; /* Réduit */
+    font-size: 0.65rem; /* Plus discret */
+    color: #94a3b8;
+    letter-spacing: 0.1em;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}

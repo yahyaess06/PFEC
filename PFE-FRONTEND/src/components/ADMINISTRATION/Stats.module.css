@@ -1,0 +1,3 @@
+.barChartPlaceholder { display: flex; align-items: flex-end; justify-content: space-around; height: 200px; padding-top: 20px; border-bottom: 2px solid #f1f5f9; }
+.bar { width: 40px; border-radius: 5px 5px 0 0; position: relative; display: flex; justify-content: center; }
+.bar span { position: absolute; top: -25px; font-weight: bold; font-size: 0.8rem; }

@@ -1,0 +1,124 @@
+.sidebar {
+    width: 230px; /* Réduit de 260px à 230px */
+    height: 100vh;
+    background-color: white;
+    border-right: 2px solid #eef2f6;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 0; /* Padding réduit */
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+/* ---------- LOGO ---------- */
+.logoSection {
+    text-align: center;
+    margin-bottom: 25px; /* Réduit de 40px à 25px */
+}
+
+.logoCircle {
+    background-color: #0096db;
+    width: 42px; /* Réduit de 50px */
+    height: 42px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 8px;
+}
+
+.logoSection h3 {
+    color: #333;
+    margin: 0;
+    font-size: 16px; /* Réduit de 18px */
+}
+
+.logoSection span {
+    color: #0096db;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* ---------- NAV ---------- */
+.nav {
+    flex-grow: 1;
+    padding: 0 12px;
+}
+
+.navItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 15px; /* Padding réduit pour compacter les lignes */
+    margin-bottom: 5px; /* Espacement entre items réduit */
+
+    background-color: white;
+    color: #64748b;
+
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13.5px; /* Texte légèrement plus petit */
+
+    transition: all 0.3s ease;
+}
+
+.navItem:hover {
+    background-color: #f1f5f9;
+    color: #0096db;
+}
+
+.navItem:active {
+    transform: scale(0.97);
+}
+
+/* ---------- ACTIF ---------- */
+.active {
+    background: linear-gradient(135deg, #0096db, #0077b6);
+    color: white !important;
+    box-shadow: 0 6px 15px rgba(0, 150, 219, 0.25);
+    transform: translateY(-1px);
+}
+
+.active svg {
+    color: white;
+}
+
+/* ---------- PROFILE ---------- */
+.doctorProfile {
+    margin-top: auto;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #eee;
+}
+
+.avatar {
+    background: #0096db;
+    color: white;
+    width: 35px; /* Taille fixe pour l'avatar */
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.docName {
+    font-weight: bold;
+    margin: 0;
+    font-size: 13px;
+    color: #1e293b;
+}
+
+.docStatus {
+    font-size: 10px;
+    color: #10b981;
+    margin: 0;
+    font-weight: 500;
+}

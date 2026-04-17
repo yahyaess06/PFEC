@@ -1,0 +1,267 @@
+/* =============================
+   MAIN CONTAINER
+============================= */
+
+.container{
+  padding:40px;
+  margin-left:260px;
+  min-height:100vh;
+  background:#f4f7fb;
+  font-family:"Inter",sans-serif;
+}
+
+/* =============================
+   HEADER
+============================= */
+
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:35px;
+}
+
+.titleGroup h1{
+  font-size:28px;
+  font-weight:700;
+  color:#0f172a;
+}
+
+.sessionStatus{
+  display:inline-block;
+  margin-top:6px;
+  padding:4px 12px;
+  background:#dcfce7;
+  color:#16a34a;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:600;
+}
+
+.actionButtons{
+  display:flex;
+  gap:12px;
+}
+
+.btnSave{
+  display:flex;
+  align-items:center;
+  gap:8px;
+  padding:10px 18px;
+  border-radius:10px;
+  background:#2563eb;
+  color:white;
+  font-weight:600;
+  border:none;
+  cursor:pointer;
+  transition:0.25s;
+}
+
+.btnSave:hover{
+  background:#1d4ed8;
+}
+
+/* =============================
+   LAYOUT
+============================= */
+
+.layout{
+  display:grid;
+  grid-template-columns:300px 1fr;
+  gap:30px;
+}
+
+/* =============================
+   PATIENT SIDEBAR
+============================= */
+
+.patientCard{
+  background:white;
+  border-radius:20px;
+  padding:30px 20px;
+  text-align:center;
+
+  box-shadow:
+          0 3px 10px rgba(0,0,0,0.03),
+          0 10px 25px rgba(0,0,0,0.05);
+}
+
+.avatarLarge{
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  margin:auto;
+  margin-bottom:15px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  font-size:28px;
+  font-weight:800;
+
+  background:#e0f2fe;
+  color:#0284c7;
+}
+
+.patientCard h2{
+  font-size:18px;
+  font-weight:700;
+  color:#0f172a;
+  margin-bottom:15px;
+}
+
+/* =============================
+   VITALS
+============================= */
+
+.vitalsGrid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+}
+
+.vitalItem{
+  background:#f1f5f9;
+  padding:12px;
+  border-radius:10px;
+}
+
+.vitalLabel{
+  font-size:11px;
+  color:#64748b;
+}
+
+.vitalValue{
+  font-size:15px;
+  font-weight:700;
+  color:#0f172a;
+}
+
+/* =============================
+   FORM SECTION
+============================= */
+
+.formSection{
+  background:white;
+  border-radius:18px;
+  padding:25px;
+
+  margin-bottom:25px;
+
+  box-shadow:
+          0 2px 10px rgba(0,0,0,0.03),
+          0 10px 20px rgba(0,0,0,0.04);
+}
+
+.formHeader{
+  display:flex;
+  align-items:center;
+  gap:12px;
+  margin-bottom:18px;
+}
+
+.formHeader h3{
+  font-size:16px;
+  font-weight:600;
+  color:#0f172a;
+}
+
+/* =============================
+   ICONS
+============================= */
+
+.iconBox{
+  width:38px;
+  height:38px;
+  border-radius:10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.blue{
+  background:#dbeafe;
+  color:#2563eb;
+}
+
+.green{
+  background:#dcfce7;
+  color:#16a34a;
+}
+
+.red{
+  background:#fee2e2;
+  color:#ef4444;
+}
+
+/* =============================
+   INPUTS
+============================= */
+
+.inputGroup{
+  margin-bottom:18px;
+}
+
+.inputGroup label{
+  font-size:13px;
+  font-weight:600;
+  color:#475569;
+  display:block;
+  margin-bottom:6px;
+}
+
+/* SELECT */
+
+.selectInput{
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #e2e8f0;
+  background:white;
+  font-size:14px;
+}
+
+.selectInput:focus{
+  outline:none;
+  border-color:#2563eb;
+}
+
+/* TEXTAREA */
+
+textarea{
+  width:100%;
+  min-height:110px;
+  border-radius:10px;
+  border:1px solid #e2e8f0;
+  padding:14px;
+  font-size:14px;
+  background:#f8fafc;
+  resize:vertical;
+}
+
+textarea:focus{
+  outline:none;
+  border-color:#2563eb;
+  background:white;
+}
+
+.diagInput{
+  min-height:130px;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media(max-width:1100px){
+
+  .layout{
+    grid-template-columns:1fr;
+  }
+
+  .container{
+    margin-left:0;
+  }
+
+}

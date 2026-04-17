@@ -1,0 +1,250 @@
+.container {
+    padding: 40px;
+    background: linear-gradient(135deg, #f7fafc, #edf7f6);
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.titleGroup h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #065f46;
+}
+
+.sessionStatus {
+    display: inline-block;
+    background: #d1fae5;
+    color: #065f46;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.btnSave {
+    background: linear-gradient(135deg, #10b981, #059669);
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease;
+}
+
+.btnSave:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(16, 185, 129, 0.3);
+}
+
+.layout {
+    display: flex;
+    gap: 40px;
+}
+
+.patientSidebar {
+    width: 35%;
+}
+
+.patientCard {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.avatarLarge {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #10b981, #34d399);
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px auto;
+}
+
+.patientCard h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1f2937;
+}
+
+.vitalsGrid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.vitalItem {
+    background: #f0fdf4;
+    padding: 12px 18px;
+    border-radius: 12px;
+}
+
+.vitalLabel {
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.vitalValue {
+    font-weight: 600;
+    color: #065f46;
+}
+
+.infoSection {
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.04);
+}
+
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
+.alertBox {
+    background: #fef2f2;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #991b1b;
+}
+
+/*.reportMain {*/
+/*    flex: 1;*/
+/*}*/
+
+.reportMain {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/*.formSection {*/
+/*    background: white;*/
+/*    padding: 30px;*/
+/*    border-radius: 20px;*/
+/*    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);*/
+/*}*/
+
+.formSection {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.05);
+}
+
+.formHeader {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.iconBox {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ecfdf5;
+}
+
+.red {
+    background: #dcfce7;
+    color: #059669;
+}
+
+.formSection h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #065f46;
+}
+
+.inputGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup label {
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 10px 14px;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+textarea {
+    resize: none;
+    min-height: 100px;
+}
+
+.readOnlyGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.readOnlyItem {
+    background: #f1f5f9;
+    padding: 12px 16px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.readOnlyLabel {
+    font-size: 12px;
+    color: #6b7280;
+    margin-bottom: 4px;
+}
+
+.readOnlyValue {
+    font-weight: 600;
+    color: #1f2937;
+}
+
+.readOnlyNote {
+    margin-top: 15px;
+    font-size: 13px;
+    color: #ef4444;
+    font-weight: 500;
+}
