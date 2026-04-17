@@ -1,15 +1,14 @@
-Voici ton texte **formaté proprement en README GitHub**, prêt à copier-coller sans modification :
 
 ````markdown
 # 🏥 PFECOMPET
 
-Projet de fin d'étude dans une seule repository  
+Projet de fin d'étude regroupé dans un seul repository.
 
 ---
 
-## 🐳 PostgreSQL (Docker)
+## 🐳 Configuration de PostgreSQL (Docker)
 
-Commande de création du conteneur PostgreSQL si vous souhaitez l’utiliser :
+Pour lancer une instance PostgreSQL via Docker, utilisez la commande suivante :
 
 ```bash
 docker run --name postgrepfe \
@@ -22,25 +21,27 @@ docker run --name postgrepfe \
 
 ---
 
-## 🔐 Comptes des Utilisateurs (Hôpital ALFARABI)
+## 🔐 Comptes Utilisateurs (Hôpital ALFARABI)
+
+Les comptes ci-dessous sont fournis à des fins de test et de démonstration.
 
 ### 👨‍⚕️ Médecins
 
-* **Médecin Cardiologue**
+* **Cardiologue**
   📧 [medecin45.hopitalalfarabi@ckhm.ma](mailto:medecin45.hopitalalfarabi@ckhm.ma)
-  🔑 Password: `qwrtyu`
+  🔑 Mot de passe : `qwrtyu`
 
-* **Médecin Gynécologue**
+* **Gynécologue**
   📧 [medecin41.hopitalalfarabi@ckhm.ma](mailto:medecin41.hopitalalfarabi@ckhm.ma)
-  🔑 Password: `qwrtyu`
+  🔑 Mot de passe : `qwrtyu`
 
 ---
 
-### 👩‍⚕️ Infirmier
+### 👩‍⚕️ Personnel Infirmier
 
 * **Infirmier de soins**
   📧 [infermier21.hopitalalfarabi@gmail.com](mailto:infermier21.hopitalalfarabi@gmail.com)
-  🔑 Password: `qwrtyu`
+  🔑 Mot de passe : `qwrtyu`
 
 ---
 
@@ -48,26 +49,26 @@ docker run --name postgrepfe \
 
 * **Directeur**
   📧 [director.hopitalalfarabi5@gmail.com](mailto:director.hopitalalfarabi5@gmail.com)
-  🔑 Password: `12345678`
+  🔑 Mot de passe : `12345678`
 
-* **Admin**
+* **Administrateur**
   📧 [admin.hopitalalfarabi6@gmail.com](mailto:admin.hopitalalfarabi6@gmail.com)
-  🔑 Password: `12345678`
+  🔑 Mot de passe : `12345678`
 
 ---
 
 ## 🧑‍🤝‍🧑 Comptes Patients
 
-Vous pouvez créer vous-même un compte patient.
-Sinon, voici des exemples :
+Vous pouvez créer librement des comptes patients via l’application.
+Pour des tests rapides, vous pouvez utiliser les comptes suivants :
 
-* **Homme**
+* **Patient (Homme)**
   📧 [yassine@gmail.com](mailto:yassine@gmail.com)
-  🔑 Password: `password123`
+  🔑 Mot de passe : `password123`
 
-* **Femme**
+* **Patient (Femme)**
   📧 [imane@gmail.com](mailto:imane@gmail.com)
-  🔑 Password: `password123`
+  🔑 Mot de passe : `password123`
 
 ---
 
