@@ -1,26 +1,76 @@
-spring.application.name=backend_pfe
-#spring.datasource.url=jdbc:h2:mem:hospital_db
-#spring.h2.console.enabled=true
-server.port=9090
 
+````markdown
+# 🏥 PFECOMPET
 
-spring.datasource.url=jdbc:postgresql://localhost:5433/pfeapp
-#spring.datasource.url=jdbc:postgresql://localhost:5432/pfeapp
-spring.datasource.username=ilcs
-spring.datasource.password=ilcs1234
-spring.datasource.driver-class-name=org.postgresql.Driver
+Projet de fin d'étude regroupé dans un seul repository.
 
-spring.jpa.hibernate.ddl-auto=update
-spring.jpa.show-sql=true
-#spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+---
 
-spring.mail.host=smtp.gmail.com
-spring.mail.port=587
-spring.mail.username=${EMAILUSERNAME}
-spring.mail.password=${EMAILPASSWORD}
-spring.mail.properties.mail.smtp.auth=true
-spring.mail.properties.smtp.starttls.enable=true
-spring.mail.properties.mail.smtp.starttls.required=true
+## 🐳 Configuration de PostgreSQL (Docker)
 
-spring.security.oauth2.client.registration.google.client-id=${OAUTH2}
-spring.security.oauth2.client.registration.google.client-secret=${SECRETOAUTH2}
+Pour lancer une instance PostgreSQL via Docker, utilisez la commande suivante :
+
+```bash
+docker run --name postgrepfe \
+-e POSTGRES_DB=pfeapp \
+-e POSTGRES_USER=ilcs \
+-e POSTGRES_PASSWORD=ilcs1234 \
+-p 5433:5432 \
+-d postgres
+````
+
+---
+
+## 🔐 Comptes Utilisateurs (Hôpital ALFARABI)
+
+Les comptes ci-dessous sont fournis à des fins de test et de démonstration.
+
+### 👨‍⚕️ Médecins
+
+* **Cardiologue**
+  📧 [medecin45.hopitalalfarabi@ckhm.ma](mailto:medecin45.hopitalalfarabi@ckhm.ma)
+  🔑 Mot de passe : `qwrtyu`
+
+* **Gynécologue**
+  📧 [medecin41.hopitalalfarabi@ckhm.ma](mailto:medecin41.hopitalalfarabi@ckhm.ma)
+  🔑 Mot de passe : `qwrtyu`
+
+---
+
+### 👩‍⚕️ Personnel Infirmier
+
+* **Infirmier de soins**
+  📧 [infermier21.hopitalalfarabi@gmail.com](mailto:infermier21.hopitalalfarabi@gmail.com)
+  🔑 Mot de passe : `qwrtyu`
+
+---
+
+### 🧑‍💼 Administration
+
+* **Directeur**
+  📧 [director.hopitalalfarabi5@gmail.com](mailto:director.hopitalalfarabi5@gmail.com)
+  🔑 Mot de passe : `12345678`
+
+* **Administrateur**
+  📧 [admin.hopitalalfarabi6@gmail.com](mailto:admin.hopitalalfarabi6@gmail.com)
+  🔑 Mot de passe : `12345678`
+
+---
+
+## 🧑‍🤝‍🧑 Comptes Patients
+
+Vous pouvez créer librement des comptes patients via l’application.
+Pour des tests rapides, vous pouvez utiliser les comptes suivants :
+
+* **Patient (Homme)**
+  📧 [yassine@gmail.com](mailto:yassine@gmail.com)
+  🔑 Mot de passe : `password123`
+
+* **Patient (Femme)**
+  📧 [imane@gmail.com](mailto:imane@gmail.com)
+  🔑 Mot de passe : `password123`
+
+---
+
+```
+```
